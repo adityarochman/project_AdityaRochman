@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <hr>
+      <h3 class="text-center">Detail Vendor</h3>
+      <hr>
+    </div>
+  </div>
+
+<!-- <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="panel panel-success">
+        <div class="panel-body"> -->
+<!-- <form #f="ngForm" (ngSubmit)="update(f)" novalidate > -->
+<!-- <div class="form-group">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img style="height: 200px; width: 200px;" src="{{ vendor.profile }}" alt="" class="img-responsive">
+              </div>
+            </div>
+            <label>Nama Vendor</label>
+            <input type="text" class="form-control">{{ vendor.name }}
+
+            <label>Alamat</label>
+            <input type="text" class="form-control" >{{ vendor.address }}
+
+            <label>Category</label>
+            <input type="text" class="form-control" >{{ vendor.category }}
+
+            <label>Email</label>
+            <input type="text" class="form-control" >{{ vendor.email }}
+
+            <label>No Telepon</label>
+            <input type="text" class="form-control" >{{ vendor.phoneNumber }}
+
+            <label>Deskripsi</label>
+            <textarea class="form-control" >{{ vendor.description }}</textarea>
+
+            <button type="button" class="btn btn-success" routerLink="">Kembali</button>
+            <button type="submit" class="btn btn-success">Update</button>
+          </div> -->
+<!-- </form> -->
+<!-- </div>
+      </div>
+    </div> -->
+
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form #f="ngForm" (ngSubmit)="update(f)" class="form-horizontal">
+        <div class="col-xs-7">
+
+          <div class="thumbnail">
+            <img style="height: 70%; width: 70%;" src="{{ vendor.profile }}" class="img-responsive" id="profile" name="profile"
+              alt="" ngModel>
+
+            <div class="post-content">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5">
+
+          <label style="font-size : 25px; font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+            id="name" name="name" ngModel>{{vendor.name}}</label>
+          <br>
+          <label style="font-size : 20px; font-family : 'Times New Roman', Times, serif; margin-bottom : 40px;" id="category"
+            name="category" ngModel> Jasa {{vendor.category}}</label>
+          <br>
+          <label style="font-size : 15px; font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;" id="address" name="address" ngModel>Alamat : {{vendor.address}}</label>
+          <br>
+          <label style="font-size : 15px; font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;" id="phoneNumber" name="phoneNumber" ngModel>Telepon : {{vendor.phoneNumber}}</label>
+          <br>
+          <label style="font-size : 15px; font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;" id="email" name="email" ngModel>E-mail : {{vendor.email}}</label>
+          <br>
+          <label style="font-size : 15px; font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;" id="description" name="description" ngModel>{{vendor.description}}</label>
+          <br>
+          <button type="button" class="btn btn-success" routerLink="">Kembali</button>
+          <button type="submit" class="btn btn-success">Update</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

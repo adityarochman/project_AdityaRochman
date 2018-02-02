@@ -1,0 +1,103 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div> -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li role="presentation">
+          <a href="#" routerLink="">Home</a>
+        </li> -->
+        <li role="presentation">
+          <!-- <a href="#" routerLink="/register">Daftar</a> -->
+        </li>
+        <li role="presentation">
+          <a href="#" routerLink="/detail">Detail</a>
+        </li>
+
+      </ul>
+      <form class="navbar-form navbar-right">
+          <ul class="nav navbar-nav">
+              <li role="presentation">
+                  <a href="#" routerLink="/detail">Logout</a>
+                </li>
+          </ul>
+          
+        <!-- <div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="Search" style="border-radius: 30px;" />
+          <i class="glyphicon glyphicon-search form-control-feedback"></i>
+        </div> -->
+      </form>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- akhir navbar -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <hr>
+      <h3 class="text-center">Detail Vendor</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="panel panel-success">
+        <div class="panel-body">
+          <form #f="ngForm" (ngSubmit)="Update(f)" novalidate >
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <!-- <img src="{{ (obj != null) ? obj.gambar : '' }}" [(ngModel)]="gambar" alt="" class="img-responsive"> -->
+              </div>
+            </div>
+            <label>Nama</label>
+            <input type="text" class="form-control" value="{{ vendor.name }}" id="name" name="name" ngModel>
+
+            <label>Nama Vendor</label>
+            <input type="text" class="form-control" value="{{ vendor.namevendor }}" id="namevendor" name="namevendor" ngModel>
+
+            <label>Alamat</label>
+            <input type="text" class="form-control" value="{{ vendor.address }}" id="address" name="address" ngModel>
+
+            <label>No Telepon</label>
+            <input type="text" class="form-control" value="{{ vendor.phoneNumber }}" id="phoneNumber" name="phoneNumber" ngModel>
+
+            <label>E-mail</label>
+            <input type="text" class="form-control" value="{{ vendor.email }}" id="email" name="email" ngModel>
+
+            <label>Kategori</label>
+            <input type="text" class="form-control" value="{{ vendor.category }}" id="category" name="category" ngModel>
+
+            <label>Mulai Sejak</label>
+            <input type="text" class="form-control" value="{{ vendor.since }}" id="since" name="since" ngModel>
+
+            <!-- <label>Deskripsi</label>
+            <textarea class="form-control" value="{{ (obj != null) ? obj.description : '' }}" [(ngModel)]="description"></textarea>
+
+            <label for="profile" class="col-sm-2 control-label">Profile</label>
+            
+            <input type="file" name="profile" id="" (change)="fileChange($event)" ngModel><br>
+            <img src="{{ imagePath }}" alt="" srcset=""> -->
+
+            <button type="button" class="btn btn-success" routerLink="">Kembali</button>
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>

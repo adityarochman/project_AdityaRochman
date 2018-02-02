@@ -1,0 +1,134 @@
+<!-- gallery -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <hr>
+      <h3 class="text-center">All</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-sm-6" *ngFor="let data of vendorList">
+
+          <div class="thumbnail">
+          <img style="height: 100px; width:100px" src="{{ data.profile }}" alt="..." class="img-responsive" class="img-rounded">
+          <div class="caption">
+            <a [routerLink]="['/detail', data._id]">
+              <h3 style="text-align: center; color : black;">{{ data.name }}</h3>
+            </a>
+            <!-- <h4>{{ data.category }}</h4>
+              <h4>{{ data.address }}</h4>
+              <h4>{{ data.phoneNumber }}</h4>
+              <h4>{{ data.email }}</h4>
+              <p>{{ data.description }}</p> -->
+
+
+
+            <!-- <input type="button" value="Delete" class="btn btn-danger" (click)="remove(data.key)" >   -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <hr>
+      <h3 class="text-center">M U A</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="assets/img/Google.png" alt="..." class="img-rounded">
+            <div class="caption">
+              <h3>Gallery 4</h3>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat ex vitae alias voluptate, hic aut
+                totam atque eligendi, aliquam beatae! Fugiat magni unde recusandae accusantium sit eaque laboriosam rem?
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="assets/img/Google.png" alt="..." class="img-rounded">
+            <div class="caption">
+              <h3>Gallery 5</h3>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat ex vitae alias voluptate, hic aut
+                totam atque eligendi, aliquam beatae! Fugiat magni unde recusandae accusantium sit eaque laboriosam rem?
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="assets/img/Google.png" alt="..." class="img-rounded">
+            <div class="caption">
+              <h3>Gallery 6</h3>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugiat ex vitae alias voluptate, hic aut
+                totam atque eligendi, aliquam beatae! Fugiat magni unde recusandae accusantium sit eaque laboriosam rem?
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- akhir gallery -->
+
+<!-- testimoni -->
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <hr>
+    <h3 class="text-center">Testimoni</h3>
+    <hr>
+  </div>
+</div>
+
+<div class="col-sm-8 col-sm-offset-2">
+  <!-- <div class="panel panel-default">
+    <div class="panel-body"> -->
+
+  <div class="row">
+
+    <div class="col-md-3 col-md-offset-1">
+      <!-- <a href="#" class="thumbnail"> -->
+      <img src="assets/img/img1.jpg" alt="..." class="img-circle">
+      <!-- </a> -->
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+      <!-- <a href="#" class="thumbnail"> -->
+      <img src="assets/img/img2.jpg" alt="..." class="img-circle">
+      <!-- </a> -->
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+      <!-- <a href="#" class="thumbnail"> -->
+      <img src="assets/img/img3.jpg" alt="..." class="img-circle">
+      <!-- </a> -->
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <!-- </div> 
+    </div> -->
+</div>
+<!-- akhir testimoni -->
